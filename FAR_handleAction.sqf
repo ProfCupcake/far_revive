@@ -9,16 +9,19 @@ _action = _params select 0;
 ////////////////////////////////////////////////
 if (_action == "action_revive") then
 {
-	[cursorTarget] spawn FAR_HandleRevive;
+  [cursorTarget] spawn FAR_HandleRevive;
 };
 
-if (_action == "action_stabilize") then
+if (_action == "action_stabilise") then
 {
-	[cursorTarget] spawn FAR_HandleStabilize;
+  [cursorTarget] spawn CUP_HandleStabilise;
 };
 
 if (_action == "action_suicide") then
 {
+  player setCaptive false;
+  player allowDamage true;
+  player enableSimulation true;
 	player setDamage 1;
 };
 
