@@ -19,7 +19,7 @@ Changelog
 
 Cupcake's version
 * Added revive modes 2 and 3. 
-* Added the option for limited "lives". If you go down too much you'll just die, no "downed" state. 
+* Added the option for limited "lives". If you go down too much you'll just die, skipping the "downed" state. 
 * Parameter to adjust the damage of someone who has just been revived. 
 * Option to allow damage to downed players. 
 * Squashed bugs. 
